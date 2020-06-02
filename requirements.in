@@ -21,7 +21,7 @@ psycopg2-binary==2.7.5
 python-dateutil==2.7.5
 python-magic==0.4.15
 pytz
-raven
+sentry-sdk
 redis==2.10.5
 requests==2.21.0
 requests_oauthlib
