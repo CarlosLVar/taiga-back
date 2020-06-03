@@ -17,6 +17,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import os.path, sys, os
+import sentry_sdk
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
