@@ -7,8 +7,10 @@
         <td>
             <h2>Thank you for registering in {{ product_name }}</h2>
             <p>We're thrilled you've joined our growing community of professionals revolutionizing their way of working and hope you enjoy it.</p>
-            <p>Please confirm your email</p>
-            <a class="button" href="{{ url }}" title="Confirm email">Confirm email</a>
+            {% if user.verified_email %}
+              <p>Please confirm your email</p>
+              <a class="button" href="{{ url }}" title="Confirm email">Confirm email</a>
+            {% endif %}
             <p>Have a question? Give us a nudge if you ever need a helping hand, we're at {{ support_email }}.</p>
             <p><small>{{ signature }}</small></p>
         </td>

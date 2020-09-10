@@ -3,7 +3,9 @@ Thank you for registering in {{ product_name }}
 
 We're thrilled you've joined our growing community of professionals revolutionizing their way of working and hope you enjoy it.
 
+{% if user.verified_email %}
 Please confirm your email: {{ url }}
+{% endif %}
 
 Have a question? Give us a nudge if you ever need a helping hand, we're at {{ support_email }}.
 
