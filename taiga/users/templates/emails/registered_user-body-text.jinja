@@ -1,4 +1,4 @@
-{% trans %}
+{% trans product_name=sr("product_name") %}
 Thank you for registering in {{ product_name }}
 
 We're thrilled you've joined our growing community of professionals revolutionizing their way of working and hope you enjoy it.
@@ -10,7 +10,7 @@ Please confirm your email: {{ url }}
 {% endtrans %}
 {% endif %}
 
-{% trans signature=sr("signature"), product_name=sr("product_name"), support_email=sr("support.email") %}
+{% trans signature=sr("signature"), support_email=sr("support.email") %}
 Have a question? Give us a nudge if you ever need a helping hand, we're at {{ support_email }}.
 --
 {{ signature }}
