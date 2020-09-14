@@ -4,7 +4,7 @@ Thank you for registering in {{ product_name }}
 We're thrilled you've joined our growing community of professionals revolutionizing their way of working and hope you enjoy it.
 {% endtrans %}
 
-{% if user.verified_email %}
+{% if not user.verified_email %}
 {% trans url=resolve_front_url("verify-email", user.email_token) %}
 Please confirm your email: {{ url }}
 {% endtrans %}
